@@ -1,0 +1,77 @@
+.images-parent-m {
+    display: flex;
+    height: 600px;
+}
+
+.image-left-m {
+    background-image: url("https://cdn.wallpapersafari.com/9/91/6CIV28.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* opacity:.9; */
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 3;
+}
+
+
+  
+  
+
+  .image-text-m {
+    margin-right: -215px;
+    margin-bottom: 4em;
+    color: rgb(182, 159, 159);
+    background: rgba(202, 198, 198, 0.2);
+    backdrop-filter: blur(10px);
+    background-clip: padding-box;
+    box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 64%), -8px -8px 12px 0 rgb(255 255 255 / 30%);
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+
+  }
+  
+  .image-text-m > * {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  display: block;
+  }
+
+
+.image-right-m {
+    background-image: url("https://wallpaperaccess.com/full/1448061.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    width: 50%;
+    height: 600px;
+}
+
+.btn-image {
+    position: relative;
+    left: 6rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: none;
+}
+
+.btn-image:hover {
+    transform: scale(1.1);
+    background: rgb(84,157,227);
+    background: linear-gradient(90deg, rgba(84,157,227,0.6558998599439776) 8%, rgba(108,183,231,1) 43%, rgba(206,120,242,0.5494572829131652) 80%);
+    color:white;
+    border: none;
+    transform: scale(1.123);
+
+}
+
+.men-all {
+    margin-top: 5rem;
+}
+
+

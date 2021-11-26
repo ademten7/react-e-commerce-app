@@ -1,0 +1,12 @@
+.login-page {
+    display: grid;
+    place-items: center;
+    background-color: var(--primaryColor);
+    padding: 3em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.login-page h1 {
+    color: white;
+}

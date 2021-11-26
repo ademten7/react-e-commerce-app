@@ -1,0 +1,70 @@
+.main-header {
+    margin-bottom: 1em;
+    padding: 30px;
+    text-align: center;
+    height: 200px;
+}
+
+.h1-span {
+    color: rgb(20, 134, 179);
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+.product-all {
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-products {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 20px;
+    height: 550px;
+    border-radius: 8px;
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25) inset, -8px -8px 12px 0 rgba(42, 41, 41, 0.3) inset;
+}
+
+.card-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+    
+
+.headers {
+    font-size: 15px;
+    color: black;
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+    
+
+.btn:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.sale {
+    color: red;
+}

@@ -1,0 +1,26 @@
+.Card {
+    height: 500px;
+    padding: 15px 0;
+    margin: 15px 0;
+    text-align: center;
+    background-size: auto 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content:center ;
+    align-items: flex-end;
+  }
+ 
+  
+  .Card:hover {
+    transform:scale(1.1)
+  }
+
+  .remove-underline {
+    text-decoration: none;
+  }
+    
+    
+  
+  
