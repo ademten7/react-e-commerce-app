@@ -9,7 +9,7 @@ const { Link } = Anchor;
 
 export default function Kids() {
   return (
-    <main>
+    <main className="container">
       <Section title="Kid's Collection" data={kidsClothes} />
 
       <div className="images-parent-k">
