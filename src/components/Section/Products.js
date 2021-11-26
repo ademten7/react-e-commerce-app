@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./Product.css";
+import "./Products.scss";
 import ReactStar from "react-rating-stars-component";
 import { Link } from "react-router-dom";
 import { MyContext } from "../../Context/context";
@@ -47,6 +47,7 @@ export default function Products({ title, data }) {
         {data.map((product) => {
           return (
             <div
+              className="each-products"
               key={product.id}
               style={{
                 width: "400px",

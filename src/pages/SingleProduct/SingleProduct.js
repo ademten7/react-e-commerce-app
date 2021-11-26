@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import products from "../../api/products";
 import ReactStars from "react-rating-stars-component";
-import "./SingleProduct.css";
+import "./SingleProduct.scss";
 
 const SingleProduct = () => {
   const params = useParams();

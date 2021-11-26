@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .images-parent-w {
     display: flex;
     height: 600px;
@@ -36,8 +37,7 @@
     display: block;
 }
 
-
-  .image-text-w {
+.image-text-w {
     margin-right: -215px;
     margin-bottom: 4em;
     color: rgb(182, 159, 159);
@@ -48,17 +48,15 @@
     overflow: hidden;
     padding: 20px;
     border-radius: 10px;
-  }
-  
-  .image-text-w > * {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: bold;
-  display: block;
-  }
+}
 
+.image-text-w>* {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    display: block;
+}
 
 .image-right-w {
-
     background-image: url("https://www.zastavki.com/pictures/originals/2017Girls___Beautyful_Girls_A_girl_sits_on_a_white_cube__photo_on_a_red_background_114698_.jpg");
     background-repeat: no-repeat;
     background-size: cover;

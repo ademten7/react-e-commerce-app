@@ -8,7 +8,7 @@ import Kids from "./pages/Kids/Kids";
 import NotFound from "./pages/NotFound/NotFound";
 import ShoppingBag from "./pages/ShoppingBag/ShoppingBag";
 import Login from "./pages/Login/Login";
-import "./App.css";
+import "./App.scss";
 import Profile from "./pages/Profile/Profile";
 import SingleProduct from "./pages/SingleProduct/SingleProduct";
 import React from "react";

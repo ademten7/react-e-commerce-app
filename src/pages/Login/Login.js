@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+import "./Login.scss";
 //FROM FIREBASE
 // Import the functions you need from the SDKs you need
 //it cover all history method
@@ -67,8 +68,7 @@ const Login = () => {
   });
 
   return (
-    <div>
-      <h1>Login Page</h1>
+    <div className="login-page">
       <GoogleButton onClick={loginWithGoogle} />
     </div>
   );

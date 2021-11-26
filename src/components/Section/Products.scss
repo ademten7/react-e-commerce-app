@@ -1,0 +1,6 @@
+@import "../../global.scss";
+.each-products {
+    @include mobile {
+        width: 300px;
+    }
+}

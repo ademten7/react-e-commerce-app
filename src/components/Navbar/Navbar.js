@@ -20,7 +20,7 @@ export default function Navbar() {
   const handleShow = () => setShow(true);
 
   return (
-    <nav className="Navbar">
+    <nav className="Navbar container">
       <Link to="/">
         <div className="Logo">
           <img width="100" src={logo} alt="" />

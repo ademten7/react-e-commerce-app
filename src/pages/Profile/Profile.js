@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./Profile.css";
+import "./Profile.scss";
 //for signout
 import { getAuth } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";

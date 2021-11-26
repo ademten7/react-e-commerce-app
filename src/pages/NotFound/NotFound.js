@@ -1,5 +1,5 @@
 import React from "react";
-import "./NotFound.css";
+import "./NotFound.scss";
 import { Link } from "react-router-dom";
 // import { useHistory } from "react-router-dom";
 

@@ -1,0 +1,33 @@
+@import "../../global.scss";
+.Section {
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.container {
+    max-width: 80vw;
+}
+
+.Cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Sub-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.Sub-header li {
+    padding-left: 3rem;
+}
+
+.slick-arrow::before {
+    background-color: black;
+}

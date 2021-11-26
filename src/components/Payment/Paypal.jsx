@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ReactDOM from "react-dom";
 import { MyContext } from "../../Context/context";
-import "./Payment.css";
+import "./Payment.scss";
 const PayPalButton = window.paypal.Buttons.driver("react", { React, ReactDOM });
 export default function PaypalComponent() {
   const { totalPrice } = useContext(MyContext);

@@ -4,7 +4,7 @@ import { GiShoppingBag } from "react-icons/gi";
 import { MdRemoveShoppingCart, MdDeleteSweep } from "react-icons/md";
 import { RiDeleteBinFill } from "react-icons/ri";
 
-import "./ShoppingBag.css";
+import "./ShoppingBag.scss";
 import Button from "react-bootstrap/Button";
 import { Modal } from "react-bootstrap";
 import Paypal from "../../components/Payment/Paypal";

@@ -8,7 +8,7 @@ const { Link } = Anchor;
 
 export default function Women() {
   return (
-    <main>
+    <main className="container">
       <Section title="Women's Collection" data={womenClothes} />
 
       <div className="images-parent-w">

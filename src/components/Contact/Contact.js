@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { GoMailRead } from "react-icons/go";
 import { GrMapLocation } from "react-icons/gr";
 import { BsTelephoneForward } from "react-icons/bs";
-import "./Contact.css";
+import "./Contact.scss";
 import EmailJS from "emailjs-com";
 
 const Contact = () => {
