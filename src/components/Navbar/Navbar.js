@@ -10,6 +10,7 @@ import Button from "react-bootstrap/Button";
 import { Modal } from "react-bootstrap";
 import Contact from "../Contact/Contact";
 import { MyContext } from "../../Context/context";
+import logo from "../../images/Logo.png";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
@@ -22,7 +23,7 @@ export default function Navbar() {
     <nav className="Navbar">
       <Link to="/">
         <div className="Logo">
-          <img width="100" src="./images/Logo.png" alt="" />
+          <img width="100" src={logo} alt="" />
         </div>
       </Link>
       <div className="NavList-left">
@@ -72,7 +73,7 @@ export default function Navbar() {
 
       <div className="NavList-right">
         <div id="shopNow" className="search-bar">
-          <div>
+          <div className="login-profile">
             {user ? (
               <Link to="/profile">
                 <BsFillPersonCheckFill />
@@ -85,23 +86,16 @@ export default function Navbar() {
                 }
                 to="/login"
               >
-                <BiLogIn /> Login
+                <BiLogIn />
+                Login
               </NavLink>
             )}
           </div>
 
           <div>
-            {/* <NavLink
-              className={(node) =>
-                node.isActive ? "myActiveClass" : "myNotActiveClass"
-              }
-              to="/contact"
-            > */}
             <button className="btn-contact" onClick={handleShow}>
               <GrMail /> Contact
             </button>
-            {/* </NavLink> */}
-
             <Modal size="lg" show={show} onHide={handleClose}>
               <Modal.Header closeButton></Modal.Header>
               <Modal.Body>

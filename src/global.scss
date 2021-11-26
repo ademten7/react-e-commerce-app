@@ -1,5 +1,5 @@
-$widthMobile: 990px;
-$widthTablet: 1460px;
+$widthMobile: 880px;
+$widthTablet: 1199px;
 @mixin mobile {
     @media (max-width: #{$widthMobile}) {
         @content;

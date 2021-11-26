@@ -124,6 +124,9 @@
     padding: 5px;
     border: none;
     background: none;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
 }
 
 .icon-bag {
@@ -132,8 +135,12 @@
 
 .quantity {
     color: rgb(223, 73, 116);
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 15px;
+}
+
+.login-profile {
+    width: 90px;
 }
 
 

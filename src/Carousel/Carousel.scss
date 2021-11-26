@@ -1,0 +1,13 @@
+@import "../global.scss";
+.WoMeKi {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex {
+    display: flex;
+}
+
+.carousel img {
+    @include mobile {}
+}

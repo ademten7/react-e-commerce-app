@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
 import { MyContext } from "../../Context/context";
-import "./Filter.css";
+import "./Filter.scss";
 import { FaFilter } from "react-icons/fa";
 
 const Filter = () => {
