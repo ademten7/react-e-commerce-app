@@ -4,6 +4,7 @@ import { kidsClothes } from "../../api/products";
 import Products from "../../components/Section/Products";
 import Section from "../../components/Section/Section";
 import { Anchor } from "antd";
+import Search from "../../components/Search/Search";
 const { Link } = Anchor;
 
 export default function Kids() {
@@ -27,6 +28,9 @@ export default function Kids() {
           </div>
         </div>
         <div className="image-right-k"></div>
+      </div>
+      <div style={{ marginTop: "4em" }}>
+        <Search />
       </div>
 
       <div className="kid-all">

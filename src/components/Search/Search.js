@@ -1,6 +1,9 @@
 import React, { useContext, useRef } from "react";
 import { MyContext } from "../../Context/context";
 import "./Search.scss";
+import { Anchor } from "antd";
+
+const { Link } = Anchor;
 
 const Search = () => {
   const inputRef = useRef();
@@ -37,10 +40,16 @@ const Search = () => {
           //name is important for useREf
           placeholder="Search products"
         />
-
-        <button type="submit" name="search">
-          Search
-        </button>
+        <Anchor affix={false}>
+          <Link
+            href="#home-page-products"
+            title={
+              <button type="submit" name="search">
+                Search
+              </button>
+            }
+          />
+        </Anchor>
       </form>
     </div>
   );

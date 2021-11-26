@@ -1,23 +1,22 @@
 import React, { useContext, useEffect } from "react";
-import "./Login.scss";
-//FROM FIREBASE
-// Import the functions you need from the SDKs you need
-//it cover all history method
 import { useNavigate } from "react-router-dom";
-//import order is important
 import { initializeApp } from "firebase/app";
 import {
+  //FROM FIREBASE
+  // Import the functions you need from the SDKs you need
+  //it cover all history method
+  //import order is important
   getAuth,
   GoogleAuthProvider,
   signInWithPopup,
   //it stay on the same page
   //onAuthStateChanged,
 } from "firebase/auth";
-
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 import GoogleButton from "react-google-button";
 import { MyContext } from "../../Context/context";
+import "./Login.scss";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,

@@ -3,7 +3,6 @@ import "./Home.scss";
 import "../../Carousel/Carousel";
 import Carousel from "../../Carousel/Carousel";
 import { init } from "ityped";
-
 import { Link } from "react-router-dom";
 import { MyContext } from "../../Context/context";
 import ReactStars from "react-rating-stars-component";
@@ -51,9 +50,6 @@ const Home = () => {
 
   return (
     <div className="container">
-      <div>
-        <Search />
-      </div>
       <div className="main-header">
         <h1>
           <span className="h1-span" ref={textRef}></span>
@@ -63,7 +59,10 @@ const Home = () => {
         <Carousel />
       </section>
       <Filter />
-      <div className="product-all">
+      <div style={{ marginTop: "4em" }}>
+        <Search />
+      </div>
+      <div id="home-page-products" className="product-all">
         {products.map((product) => {
           return (
             <div key={product.id} className="home-products">

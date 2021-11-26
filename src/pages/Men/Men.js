@@ -4,6 +4,7 @@ import { menClothes } from "../../api/products";
 import Products from "../../components/Section/Products";
 import Section from "../../components/Section/Section";
 import { Anchor } from "antd";
+import Search from "../../components/Search/Search";
 const { Link } = Anchor;
 
 export default function Men() {
@@ -28,7 +29,9 @@ export default function Men() {
         </div>
         <div className="image-right-m"></div>
       </div>
-
+      <div style={{ marginTop: "4em" }}>
+        <Search />
+      </div>
       <div className="men-all">
         <Products title="All Products" data={menClothes} />
       </div>
