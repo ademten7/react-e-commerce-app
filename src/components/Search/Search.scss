@@ -1,0 +1,17 @@
+.Form-Search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    input {
+        border: 2px solid #e9b10b;
+        padding: 10px;
+    }
+    button {
+        border: 2px solid #e9b10b;
+        border-left: none;
+        margin-top: 0;
+        padding: 10px;
+        color: rgb(5, 94, 165);
+    }
+}

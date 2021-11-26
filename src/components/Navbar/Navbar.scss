@@ -1,3 +1,4 @@
+@import "../../global.scss";
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,9 @@
     justify-content: space-between;
     width: 100vw;
     padding: 3rem 4rem;
+    @include Tablet {
+        flex-direction: column;
+    }
 }
 
 .Logo {
@@ -25,6 +29,9 @@
     vertical-align: middle;
     font-weight: 700;
     font-style: italic;
+    @include Tablet {
+        margin-bottom: 20px;
+    }
 }
 
 .NavList-left,
@@ -42,25 +49,27 @@
 
 .NavList-right {
     justify-content: flex-end;
-    width: 100%;
+    align-items: center;
+    width: 25vw;
     /* border: 1px solid black; */
+    @include Tablet {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .List-left {
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 25vw;
-}
-
-input {
-    outline: hidden;
-    background-color: white;
-    border-style: hidden;
-}
-
-input:focus {
-    outline: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    @include Tablet {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .react-icons {
@@ -77,15 +86,19 @@ input:focus {
     color: white;
     text-decoration: none;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 20px;
     padding: 0 5px;
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(42, 41, 41, 0.3);
+    .quantity {
+        color: white;
+    }
 }
 
 .myNotActiveClass {
     color: rgb(5, 94, 165);
     text-decoration: none;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 20px;
     padding: 5px;
 }
 
@@ -96,16 +109,31 @@ input:focus {
     width: 80%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    @include Tablet {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .btn-contact {
     color: rgb(5, 94, 165);
     text-decoration: none;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 20px;
     padding: 5px;
     border: none;
     background: none;
+}
+
+.icon-bag {
+    font-size: 1.5em;
+}
+
+.quantity {
+    color: rgb(223, 73, 116);
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 
@@ -115,40 +143,17 @@ input:focus {
     border-radius: 50%;
 } */
 
-.BarSearch {
-    border: 2px solid orange;
-    border-radius: 50px;
-    margin-top: 0.1rem;
-    height: 50px;
-    /* padding: 10px; */
-    /* box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25) , -8px -8px 12px 0 rgba(42, 41, 41, 0.3); */
-}
+
+/* padding: 10px; */
+
+
+/* box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25) , -8px -8px 12px 0 rgba(42, 41, 41, 0.3); */
 
 
 /* search icon button */
 
-.btn-search {
-    /* padding: 1px; */
-    border-radius: 50%;
-    border: none;
-    background-color: orange;
-    color: white;
-    margin-right: 5px;
-    width: 40px;
-    height: 40px;
-}
-
 
 /* input */
-
-.search {
-    /* border: 1px solid rgba(114, 114, 114, 0.404); */
-    margin: 0.5rem 2rem;
-    color: rgb(78, 78, 78);
-    font-weight: 800;
-    /* margin-bottom: 1rem; */
-    /* padding: 1px 10px; */
-}
 
 
 /* .active {

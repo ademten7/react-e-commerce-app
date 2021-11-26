@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useEffect } from "react";
-import "./Home.css";
+import "./Home.scss";
 import "../../Carousel/Carousel";
 import Carousel from "../../Carousel/Carousel";
 import { init } from "ityped";
@@ -9,6 +9,7 @@ import { MyContext } from "../../Context/context";
 import ReactStars from "react-rating-stars-component";
 import { MdShoppingCart } from "react-icons/md";
 import Filter from "../../components/FilterProducts/Filter";
+import Search from "../../components/Search/Search";
 
 const Home = () => {
   const { products, bag, setBag } = useContext(MyContext);
@@ -50,6 +51,9 @@ const Home = () => {
 
   return (
     <div className="container">
+      <div>
+        <Search />
+      </div>
       <div className="main-header">
         <h1>
           <span className="h1-span" ref={textRef}></span>
@@ -71,20 +75,28 @@ const Home = () => {
                   <h2 className="headers">{product.title}</h2>
                 </Link>
                 <div>
-                  <img src={product.image} alt="" width="200" />
+                  <img
+                    className="product-image"
+                    src={product.image}
+                    alt=""
+                    width="200"
+                  />
                 </div>
                 <h1 className={product.price >= 100 ? "sale" : "normal"}>
                   ${product.price}
                 </h1>
                 <ReactStars
                   count={5}
-                  size={24}
+                  size={18}
                   activeColor="#ffd700"
                   value={product.rating.rate}
                   isHalf={true}
                   edit={false}
                 />
-                <button className="btn" onClick={() => addToBag(product)}>
+                <button
+                  className="btn add-to-bag"
+                  onClick={() => addToBag(product)}
+                >
                   <MdShoppingCart /> Add To Bag
                 </button>
               </div>
