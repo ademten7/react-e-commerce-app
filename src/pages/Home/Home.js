@@ -11,7 +11,7 @@ import { MdShoppingCart } from "react-icons/md";
 import Filter from "../../components/FilterProducts/Filter";
 
 const Home = () => {
-  const { products, bag, setBag, user } = useContext(MyContext);
+  const { products, bag, setBag } = useContext(MyContext);
   let { quantity, setQuantity } = useContext(MyContext);
   const textRef = useRef();
   const addToBag = (item) => {
@@ -62,7 +62,7 @@ const Home = () => {
       <div className="product-all">
         {products.map((product) => {
           return (
-            <div className="home-products">
+            <div key={product.id} className="home-products">
               <div className="card-items">
                 <Link
                   className="text-decoration"

@@ -5,7 +5,7 @@ import { FaFilter } from "react-icons/fa";
 
 const Filter = () => {
   const formRef = useRef();
-  const { products, setProducts, data } = useContext(MyContext);
+  const { setProducts, data } = useContext(MyContext);
   const [category, setCategory] = useState("all");
   const [star, setStar] = useState(0);
   const [price, setPrice] = useState(0);
@@ -61,9 +61,7 @@ const Filter = () => {
             Star
           </label>
           <select name="star" id="star" className="form-control">
-            <option selected value="1" selected>
-              1
-            </option>
+            <option defaultValue="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -86,7 +84,7 @@ const Filter = () => {
             min="5"
             max="1000"
             // defaultValue={defaultPrice}
-            class="slider"
+            className="slider"
           />
         </div>
 

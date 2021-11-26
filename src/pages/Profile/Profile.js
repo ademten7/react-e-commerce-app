@@ -1,21 +1,21 @@
 import React, { useContext } from "react";
 import "./Profile.css";
 //for signout
-import { getAuth, signOut } from "firebase/auth";
+import { getAuth } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { MyContext } from "../../Context/context";
 
-const auth = getAuth();
+getAuth();
 const Profile = () => {
-  const navigate = useNavigate();
+  useNavigate();
   const { user, setUser } = useContext(MyContext);
-  const logOutGoogle = () => {
-    signOut(auth).then(() => {
-      setUser(null);
-      //   navigate("/", { replace: true }); replace olmadan da calisiyor.
-      navigate("/");
-    });
-  };
+  // const logOutGoogle = () => {
+  //   signOut(auth).then(() => {
+  //     setUser(null);
+  //     //   navigate("/", { replace: true }); replace olmadan da calisiyor.
+  //     navigate("/");
+  //   });
+  // };
   console.log(user);
   return (
     <div className="profile">

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import products from "../../api/products";
 import ReactStars from "react-rating-stars-component";
@@ -7,7 +7,9 @@ import "./SingleProduct.css";
 const SingleProduct = () => {
   const params = useParams();
 
-  let productItem = products.find((item) => item.id == params.id);
+  let productItem = products.find(
+    (item) => Number(item.id) === Number(params.id)
+  );
 
   return (
     <div>
