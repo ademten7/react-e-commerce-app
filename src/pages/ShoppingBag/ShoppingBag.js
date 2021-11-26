@@ -26,7 +26,7 @@ const ShoppingBag = () => {
 
     setTotalPrice(total);
     console.log(totalPrice);
-  }, [bag]);
+  }, [bag, totalPrice, setTotalPrice]);
 
   console.log(totalPrice);
 
@@ -62,8 +62,8 @@ const ShoppingBag = () => {
     console.log(sumOfTheQuntity);
     setSumOfQuantity(sumOfTheQuntity);
     console.log(sumOfQuantity);
-  }, [bag]);
-  
+  }, [bag, sumOfQuantity]);
+
   //clear Shopping Bag
   const clearShoppingBag = () => {
     quantity -= sumOfQuantity;

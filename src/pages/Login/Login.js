@@ -64,7 +64,7 @@ const Login = () => {
       let originalLocalUser = JSON.parse(localUSer);
       setUser(originalLocalUser);
     }
-  }, []);
+  });
 
   return (
     <div>

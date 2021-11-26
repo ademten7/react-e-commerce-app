@@ -54,7 +54,7 @@
 .total-pay {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .total-pay h3 {
