@@ -2,7 +2,6 @@ import React, { useContext, useRef } from "react";
 import { MyContext } from "../../Context/context";
 import "./Search.scss";
 import { Anchor } from "antd";
-
 const { Link } = Anchor;
 
 const Search = () => {

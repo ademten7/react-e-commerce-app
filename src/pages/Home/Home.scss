@@ -41,9 +41,12 @@
     flex-wrap: wrap;
     width: 30%;
     padding: 80px;
-    height: 550px;
+    height: 700px;
     border-radius: 8px;
-    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25) inset, -8px -8px 12px 0 rgba(42, 41, 41, 0.3) inset;
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(42, 41, 41, 0.3);
+    @include mobile {
+        height: 600px;
+    }
 }
 
 .card-items {
@@ -52,6 +55,14 @@
     align-items: center;
     justify-content: center;
     padding: 80px;
+    img {
+        height: 280px;
+    }
+    @include mobile {
+        img {
+            height: 180px;
+        }
+    }
 }
 
 .headers {

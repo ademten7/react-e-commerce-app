@@ -8,6 +8,8 @@
     display: flex;
 }
 
-.carousel img {
-    @include mobile {}
+.carousel  {
+    @include mobile {
+        
+    }
 }
